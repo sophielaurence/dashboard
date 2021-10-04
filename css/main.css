@@ -1,0 +1,87 @@
+body {
+  height:100vh;
+  display:grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: .5 fr 2fr 1fr;
+  padding: 1rem;
+  grid-gap:1rem;
+  box-sizing:borderbox;
+  font-family: 'Open Sans', sans-serif;
+  color: #314C7F;
+}
+
+section {
+  padding:  3rem;
+  border-radius: .5rem;
+
+
+
+}
+
+section h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
+.nav {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  text-align: right;
+}
+
+.nav .fas {
+  grid-column: 2;
+  justify-self: end;
+  font-size: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 50%;
+  }
+
+.menu {
+  grid-column:1; 
+  grid-row: 2/ span 2;
+   font-size: 1.5rem;
+   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.main {
+  grid-column:2;
+  grid-row: 2;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.dailygoal {
+  grid-column:3;
+  grid-row:2;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  text-align: center;
+}
+
+.weeklygoal {
+  grid-column: 2 / span 2;
+  grid-row: 3;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  text-align: center;
+}
+
+ul {
+list-style: none;
+padding: 0;
+line-height: 70px;
+text-transform: uppercase;
+}
+
+li {
+display: grid;
+grid-template-columns: 3rem auto;
+}
+
+.fas {
+  display: center;
+}
+
